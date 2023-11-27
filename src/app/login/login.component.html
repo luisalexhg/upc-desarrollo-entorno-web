@@ -1,0 +1,40 @@
+<section class="bg-light o-hidden pt-5 pb-5 custom-bg">
+   <div class="container">
+    
+    <div class="row align-items-center justify-content-center">
+
+      <div class="col-md-4">
+
+        <div class="card pt-5">
+          
+          <img class="text-center" src="/assets/img/logo.png" style="width:100%;max-width:280px;text-align:center;margin: 0 auto;" alt="">
+          <form class="border border-light p-5" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <p class="h4 mb-4 text-center">Inicia sesión</p>
+            
+
+            <div class="form-group mb-3">
+              <label for="username">Nombre de usuario:</label>
+              <input class="form-control" maxlength="20" [(ngModel)]="username" type="text" id="username" formControlName="username">
+              <div class="error-message" *ngIf="formSubmitted && loginForm.get('username')?.hasError('required')">
+                El nombre de usuario es requerido.
+              </div>
+            </div>
+          
+            <div class="form-group mb-3">
+              <label for="password">Contraseña:</label>
+              <input class="form-control mt-3 mb-2" maxlength="20" [(ngModel)]="password" type="password" id="password" formControlName="password">
+              <div class="error-message" *ngIf="formSubmitted && loginForm.get('password')?.hasError('required')">
+                La contraseña es requerida.
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+              <button class="btn btn-primary mt-3" style="border-radius: 2.5rem;padding: 14px 2rem;font-size: 1rem;line-height: 1.25rem;background-color:black;" type="submit">Iniciar sesión</button>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

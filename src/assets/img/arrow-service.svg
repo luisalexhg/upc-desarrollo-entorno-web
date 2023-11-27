@@ -1,0 +1,8 @@
+<svg id="Componente_3_1" data-name="Componente 3 – 1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <circle id="Elipse_102" data-name="Elipse 102" cx="30" cy="30" r="30" fill="#d8dde3"/>
+  <g id="right-arrow_1_" data-name="right-arrow (1)" transform="translate(10 -109)">
+    <g id="Grupo_1910" data-name="Grupo 1910" transform="translate(0 132)">
+      <path id="Trazado_4565" data-name="Trazado 4565" d="M28.572,138.2h0l-5.9-5.871a1.129,1.129,0,0,0-1.593,1.6l3.961,3.942H13.129a1.129,1.129,0,1,0,0,2.258H25.04l-3.961,3.942a1.129,1.129,0,0,0,1.593,1.6l5.9-5.871h0A1.13,1.13,0,0,0,28.572,138.2Z" transform="translate(0 -132)" fill="#4e5f81"/>
+    </g>
+  </g>
+</svg>

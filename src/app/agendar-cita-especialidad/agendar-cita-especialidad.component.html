@@ -1,0 +1,26 @@
+<section class="bg-light o-hidden pt-5 pb-5 custom-bg">
+   <div class="container">
+      <div class="row mb-4 justify-content-center text-center">
+         <div class="lead-custom">Selecciona el médico</div>
+      </div>
+      <div id="doctors" class="row align-items-center justify-content-center">
+         <div class="col-12 col-md-7 mb-4" *ngFor="let doctor of doctors">
+            <a routerLink="/agendar-cita-medico/{{doctor.id}}">
+               <div class="card h-100 hover-box-shadow border-none">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img style="width:100%;max-width:48px;margin-right:15px" src="{{doctor.image}}" alt="{{doctor.name}}">
+                        <h3 class="services-title text-center">Dr. {{doctor.name}}</h3>
+                    </div>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+      <div class="pt-5">
+          <a style="color:black" class="text-center" routerLink="/agendar-cita">
+              <p class="text-center">← Volver</p>
+          </a>
+      </div>
+   </div>
+</section>

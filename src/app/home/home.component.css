@@ -1,0 +1,25 @@
+.lead-custom {
+    color: #000000;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none!important;
+}
+.services-title{
+    margin: 15px;
+    font-size: 22px;
+    text-decoration: none!important;
+
+}
+.select-service-text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4E5F81;
+}

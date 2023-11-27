@@ -12,7 +12,8 @@ export class specialtyService {
   constructor(private http: HttpClient) { }
 
   __getSpecialties(): Observable<any> {
-    return this.http.get(this.apiUrl);
+    const url = `${this.apiUrl}/specialties`;
+    return this.http.get(url);
   }
 
 }

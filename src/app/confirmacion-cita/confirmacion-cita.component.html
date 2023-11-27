@@ -5,42 +5,42 @@
 
       <div class="col-md-8">
 
-        <div class="card p-5">
+        <div class="card p-5" *ngFor="let appointment of appointments">
             
             <div class="text-center mb-5">
                 <p class="h4 mb-4">Confirmación de la cita</p>
 
-                <img style="width:100%;max-width:128px;margin-right:15px" src="https://as2.ftcdn.net/v2/jpg/01/34/29/31/1000_F_134293169_ymHT6Lufl0i94WzyE0NNMyDkiMCH9HWx.jpg" alt="">
-                <h3 class="services-title text-center">Dr. Juan Aliaga</h3>
-                <span style="margin-left:15px">Especialista en Pediatría</span>
+                <img style="width:100%;max-width:128px;margin-right:15px" src="{{appointments[0].doctorImage}}" alt="{{appointments[0].doctorName}} {{appointments[0].doctorLastName}}">
+                <h3 class="services-title text-center">Dr. {{appointments[0].doctorName}} {{appointments[0].doctorLastName}}</h3>
+                <span style="margin-left:15px">Especialista en {{appointments[0].doctorSpecialtyName}}</span>
             </div>
 
           
 
             <div class="row">
                 <div class="col-6">
-                    <p>Tipo de documento: DNI</p>
+                    <p>Tipo de documento: {{appointments[0].documentType}}</p>
                 </div>
                 <div class="col-6">
-                    <p>Número de documento: 72186756</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <p>Nombres: Luis</p>
-                </div>
-                <div class="col-6">
-                    <p>Apellidos: Herrera</p>
+                    <p>Número de documento: {{appointments[0].documentNumber}}</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-6">
-                    <p>Fecha: 07/11/2023</p>
+                    <p>Nombres: {{appointments[0].name}}</p>
                 </div>
                 <div class="col-6">
-                    <p>Hora: 10:00</p>
+                    <p>Apellidos: {{appointments[0].lastName}}</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p>Fecha: {{appointments[0].date}}</p>
+                </div>
+                <div class="col-6">
+                    <p>Hora: {{appointments[0].hour}}</p>
                 </div>
             </div>
             
